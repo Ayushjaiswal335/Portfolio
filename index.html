@@ -1,12 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Ayush Jiaswal-Portfolio</title>
         <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-        <script src="index.js"></script>
+        <div id="header">
+                <div class="container">
+                        <nav>
+                                <img src="images/img/logoo.png" class="logo">
+                                <ul id="sidemenu">
+                                        <li><a href="#header">Home</a></li>
+                                        <li><a href="#about">About</a></li>
+                                        <li><a href="#services">Service</a></li>
+                                        <li><a href="#portfolio">Portfolio</a></li>
+                                        <li><a href="#contact">Contact</a></li>
+                                        <img class="fas" src="icons/close.svg" onclick="closemenu()" alt="">
+                                </ul>
+                                <img class="fas" src="icons/hamebburger.svg" onclick="openmenu()" alt="">
+                        </nav>
+                        <div class="header-text">
+                                <p>Frontend and Java Devloper</p>
+                                <h1>Hi,I'm <span>Ayush</span> <br>Jasiwal From India</h1>
+                        </div>
+                </div>
+        </div>
+        <div id="about">
+                <div class="container">
+                        <div class="row">
+                                <div class="about-col-1">
+                                        <img src="images/img/ayush.jpg" alt="">
+                                </div>
+                                <div class="about-col-2">
+                                        <h1 class="sub-title">About Me</h1>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio numquam
+                                                iure officiis vel mollitia neque nulla temporibus magni, dignissimos a,
+                                                esse id eius consequatur itaque. Possimus ab repellat corporis
+                                                necessitatibus. Lorem ipsum dolor sit amet consectetur, adipisicing
+                                                elit. Quia eveniet ab iure iusto modi voluptatem at amet sint nihil
+                                                nostrum consequuntur nesciunt suscipit provident, rem repudiandae
+                                                doloribus hic saepe facilis.</p>
+
+                                        <div class="tab-titles ">
+                                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                                <p class="tab-links " onclick="opentab('Education')">Education</p>
+                                        </div>
+                                        <div class="tab-contents active-tab" id="skills">
+                                                <ul>
+                                                        <li><span>Frontend </span><br>Frontend Developer</li>
+                                                        <li><span>Java </span><br>Java Developer</li>
+                                                        <li><span>Development tools </span><br>Tailwind Css</li>
+                                                        <li><span>Libraries </span><br>ReactJS</li>
+
+                                                </ul>
+                                        </div>
+                                        <div class="tab-contents " id="Education">
+                                                <ul>
+                                                        <li><span>2017-2020</span><br>10th and 12th from Dav Moonidih
+                                                        </li>
+                                                        <li><span>2020-2024</span><br>BTech from GEC Bhubaneswar</li>
+                                                </ul>
+                                        </div>
+
+                                </div>
+
+                        </div>
+                </div>
+        </div>
+        <div id="services">
+                <div class="container">
+                        <h1 class="sub-title">My Services</h1>
+                        <div class="services-list">
+                                <div>
+                                        <img src="icons/code.svg" alt="">
+                                        <h2>Frontend Developer</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit. Praesentium facilis id iusto earum laborum
+                                                molestiae animi enim. Sit minima commodi quod
+                                                adipisci et molestiae exercitationem inventore
+                                                vel libero, doloribus iusto?</p>
+                                        <a href="#">Learn More</a>
+                                </div>
+                                <div>
+                                        <img src="icons/crop.svg" alt="">
+                                        <h2>Frontend Developer</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit. Praesentium facilis id iusto earum laborum
+                                                molestiae animi enim. Sit minima commodi quod
+                                                adipisci et molestiae exercitationem inventore
+                                                vel libero, doloribus iusto?</p>
+                                        <a href="#">Learn More</a>
+                                </div>
+                                <div>
+                                        <img src="icons/app.svg" alt="">
+                                        <h2>Frontend Developer</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit. Praesentium facilis id iusto earum laborum
+                                                molestiae animi enim. Sit minima commodi quod
+                                                adipisci et molestiae exercitationem inventore
+                                                vel libero, doloribus iusto?</p>
+                                        <a href="#">Learn More</a>
+                                </div>
+                        </div>
+                </div>
+        </div>
+        <div id="portfolio">
+                <div class="container">
+                        <h1 class="sub-title">My Work</h1>
+                        <div class="work-list">
+                                <div class="work">
+                                        <img src="/images/projects/project_1.jpg" alt="">
+                                        <div class="layer">
+                                                <h3>Social Media App</h3>
+                                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet dolores voluptatem cum consequuntur hic imilique ad qui!</p>
+                                                <a href="#"><img src="icons/link.svg" alt=""></a>
+                                        </div>
+                                </div>
+                                <div class="work">
+                                        <img src="/images/projects/project_2.png" alt="">
+                                        <div class="layer">
+                                                <h3>Music App</h3>
+                                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet dolores voluptatem cum consequuntur hic imilique ad qui!</p>
+                                                <a href="#"><img src="icons/link.svg" alt=""></a>
+                                        </div>
+                                </div>
+                                <div class="work">
+                                        <img src="/images/projects/project_3.png" alt="">
+                                        <div class="layer">
+                                                <h3>Movie App</h3>
+                                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet dolores voluptatem cum consequuntur hic imilique ad qui!</p>
+                                                <a href="#"><img src="icons/link.svg" alt=""></a>
+                                        </div>
+                                </div>
+                        </div>
+                        <a href="#" class="btn">See More</a>
+                </div>
+        </div>
+        <div id="contact">
+                <div class="container">
+                        <div class="row">
+                                <div class="contact-left">
+                                        <h1 class="sub-title">Contact Me</h1>
+                                        <p><img src="icons/email.svg" alt="">ayushkumarjaiswal335@gmail.com</p>
+                                        <p><img src="icons/phone.svg" alt="">7909096729</p>
+                                        <div class="social-icons">
+                                                <a href=""><img src="/icons/facebook.svg" alt=""></a>
+                                                <a href=""><img src="/icons/github.svg" alt=""></a>
+                                                <a href=""><img src="/icons/insta.svg" alt=""></a>
+                                                <a href=""><img src="/icons/linkdin.svg" alt=""></a>
+                                        </div>
+                                        <a href="images/img/MyCv.pdf" download class="btn btn2">Download CV</a>
+                                </div>
+                                <div class="contact-right">
+                                        <form name="submit-to-google-sheet">
+                                                <input type="text" name="Name" placeholder="Your Name" required>
+                                                <input type="email" name="Email" placeholder="Your Email" required>
+                                                <textarea name="Messege" rows="6" placeholder="Your Messege"></textarea>
+                                                <button type="submit" class="btn btn2" >Submit</button>
+                                        </form>
+                                        <span id="msg"></span>
+                                </div>
+                        </div>
+                </div>
+                <div class="copyright">
+                        <p>Copyright &#169; By Ayush. Made With &#10084;</p>
+                </div>
+        </div>
+        <script src="script.js"></script>
+        <script src="form.js"></script>
 </body>
+
 </html>
